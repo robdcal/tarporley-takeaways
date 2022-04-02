@@ -11,10 +11,12 @@ export class FilterButton extends React.Component {
   render() {
     return (
       <button
-        className={(this.props.details.status === true) ? "btn-filter-active" : "btn-filter-inactive"}
-        // label={this.props.label}
+        className={
+          this.props.details.status === true
+            ? "btn-filter-active"
+            : "btn-filter-inactive"
+        }
         onClick={this.toggleFilter}
-        // status={this.props.status}
       >
         {this.props.details.name}
       </button>
